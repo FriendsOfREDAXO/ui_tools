@@ -4,5 +4,5 @@ author: 'Friends Of REDAXO'
 supportpage: github.com/FriendsOfREDAXO
 
 page:
-    title: 'translate:selectize_title'
+    title: 'translate:selectize_menu_entry'
     perm: admin[]

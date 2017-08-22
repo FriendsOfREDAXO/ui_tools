@@ -4,5 +4,5 @@ author: 'Friends Of REDAXO'
 supportpage: github.com/FriendsOfREDAXO
 
 page:
-    title: 'translate:jquery-minicolors_title'
+    title: 'translate:jquery-minicolors_menu_entry'
     perm: admin[]
