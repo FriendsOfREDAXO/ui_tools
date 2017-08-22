@@ -1,0 +1,22 @@
+# Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
+
+package: modulsammlung
+version: '0.1.0'
+author: 'Friends Of REDAXO'
+supportpage: https://github.com/FriendsOfREDAXO/be_utilites/issues
+info: 'Idee und Realisierung der ersten Version: Tim Filler / timfiller.de'
+compile: 1
+
+page:
+    title: 'translate:title'
+    perm: be_utilites[]
+    icon: rex-icon fa-wrench
+    pjax: false
+    subpages:
+        info:
+            title: 'Info'
+            itemclass: 'pull-right'
+            subpages:
+                info: { title: 'Info'}
+                changelog: { title: 'translate:changelog'}
+                lizenz: { title: 'translate:license'}

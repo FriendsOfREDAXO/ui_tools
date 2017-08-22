@@ -1,0 +1,8 @@
+package: be_utilites/jquery-minicolors
+version: '0.1'
+author: 'Friends Of REDAXO'
+supportpage: github.com/FriendsOfREDAXO
+
+page:
+    title: 'translate:jquery-minicolors_title'
+    perm: admin[]

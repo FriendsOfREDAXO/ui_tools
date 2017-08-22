@@ -1,0 +1,8 @@
+package: be_utilites/selectize
+version: '0.1'
+author: 'Friends Of REDAXO'
+supportpage: github.com/FriendsOfREDAXO
+
+page:
+    title: 'translate:selectize_title'
+    perm: admin[]
