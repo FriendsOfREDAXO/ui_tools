@@ -1,8 +1,8 @@
 <?php
-$file = rex_file::get(rex_path::addon('be_utilites','LICENSE.md'));
+$file = rex_file::get(rex_path::addon('be_utilities','LICENSE.md'));
 $Parsedown = new Parsedown();
 
-$content =  '<div id="be_utilites">'.$Parsedown->text($file).'</div>';
+$content =  '<div id="be_utilities">'.$Parsedown->text($file).'</div>';
 
 $fragment = new rex_fragment();
 $fragment->setVar('title', 'Lizenz');

@@ -1,8 +1,8 @@
 <?php
 
-$file = rex_file::get(rex_path::addon('be_utilites','README.md'));
+$file = rex_file::get(rex_path::addon('be_utilities','README.md'));
 $Parsedown = new Parsedown();
-$content =  '<div id="be_utilites">'.$Parsedown->text($file);
+$content =  '<div id="be_utilities">'.$Parsedown->text($file);
 
 
 $fragment = new rex_fragment();
