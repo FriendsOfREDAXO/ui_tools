@@ -1,6 +1,6 @@
 # Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
 
-package: be_utilites
+package: be_utilities
 version: '0.1.0'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/be_utilites/issues
