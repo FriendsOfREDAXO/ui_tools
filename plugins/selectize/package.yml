@@ -6,3 +6,8 @@ supportpage: github.com/FriendsOfREDAXO
 page:
     title: 'translate:selectize_menu_entry'
     perm: admin[]
+    subpages:
+      index: { title: 'translate:selectize_config_title', perm: admin}
+      selectize_readme: { title: 'translate:selectize_readme', perm: admin}
+      selectize_changelog: { title: 'translate:selectize_changelog', perm: admin}
+      selectize_license: { title: 'translate:selectize_license', perm: admin}

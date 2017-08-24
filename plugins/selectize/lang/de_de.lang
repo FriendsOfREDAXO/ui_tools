@@ -1,4 +1,6 @@
 selectize_menu_entry = selectize
+selectize_config_title = Einstellungen
 selectize_info = Info
+selectize_readme = Info
 selectize_license = Lizenz
 selectize_changelog = Changelog
