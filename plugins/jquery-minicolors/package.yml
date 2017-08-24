@@ -6,3 +6,7 @@ supportpage: github.com/FriendsOfREDAXO
 page:
     title: 'translate:jquery-minicolors_menu_entry'
     perm: admin[]
+    subpages:
+      index: { title: 'translate:jquery-minicolors_config_title', perm: admin}
+      jquery-minicolors_readme: { title: 'translate:jquery-minicolors_readme', perm: admin}
+      jquery-minicolors_license: { title: 'translate:jquery-minicolors_license', perm: admin}
