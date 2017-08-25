@@ -1,0 +1,14 @@
+package: ui_tools/bootstrap-datetimepicker
+version: 'v4.17.47'
+author: 'Friends Of REDAXO'
+supportpage: github.com/FriendsOfREDAXO
+
+page:
+    title: 'translate:bootstrap-datetimepicker_menu_entry'
+    perm: admin[]
+    subpages:
+      index: { title: 'translate:bootstrap-datetimepicker_config_title', perm: admin}
+      bootstrap-datetimepicker_readme: { title: 'translate:bootstrap-datetimepicker_readme', perm: admin}
+      bootstrap-datetimepicker_license: { title: 'translate:bootstrap-datetimepicker_license', perm: admin}
+      bootstrap-datetimepicker_scss: { title: 'translate:bootstrap-datetimepicker_scss', perm: admin}
+      bootstrap-datetimepicker_less: { title: 'translate:bootstrap-datetimepicker_less', perm: admin}
