@@ -1,15 +1,15 @@
 # Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
 
-package: be_utilities
+package: ui_tools
 version: '0.1.0'
 author: 'Friends Of REDAXO'
-supportpage: https://github.com/FriendsOfREDAXO/be_utilites/issues
+supportpage: https://github.com/FriendsOfREDAXO/ui_tools/issues
 info: 'Idee und Realisierung der ersten Version: Tim Filler / timfiller.de'
 compile: 1
 
 page:
     title: 'translate:title'
-    perm: be_utilites[]
+    perm: ui_tools[]
     icon: rex-icon fa-wrench
     pjax: false
     subpages:

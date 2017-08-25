@@ -1,5 +1,5 @@
-be_utilities_title = BE Utilities
-be_utilities_general_dummy[] = Rechte für be_utilities-Addon
+ui_tools_title = UI Tools
+ui_tools_general_dummy[] = Rechte für UI Tools-Addon
 
-be_utilities_changelog = Changelog
-be_utilities_license = Lizenz
+ui_tools_changelog = Changelog
+ui_tools_license = Lizenz

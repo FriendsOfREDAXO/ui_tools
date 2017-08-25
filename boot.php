@@ -4,7 +4,7 @@ $this->setProperty('author', 'Friends Of REDAXO');
 
 if (rex::isBackend() && rex::getUser()) {
 
-    rex_perm::register('be_utilities[]');
+    rex_perm::register('ui_tools[]');
 
     rex_extension::register('PACKAGES_INCLUDED', function () {
         if (rex::getUser() && $this->getProperty('compile')) {

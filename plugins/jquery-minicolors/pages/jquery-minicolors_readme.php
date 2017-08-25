@@ -2,9 +2,9 @@
 
 //echo rex_view::title(rex_i18n::msg('jquery-minicolors_menu_entry'));
 
-$file = rex_file::get(rex_path::addon('be_utilities/plugins/jquery-minicolors/assets/jquery-minicolors','README.md'));
+$file = rex_file::get(rex_path::addon('ui_tools/plugins/jquery-minicolors/assets/jquery-minicolors','README.md'));
 $Parsedown = new Parsedown();
-$content =  '<div id="be_utilities">'.$Parsedown->text($file);
+$content =  '<div id="ui_tools">'.$Parsedown->text($file);
 
 
 $fragment = new rex_fragment();

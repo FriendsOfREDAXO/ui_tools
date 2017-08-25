@@ -1,4 +1,4 @@
-package: be_utilities/selectize
+package: ui_tools/selectize
 version: '0.12.4'
 author: 'Friends Of REDAXO'
 supportpage: github.com/FriendsOfREDAXO

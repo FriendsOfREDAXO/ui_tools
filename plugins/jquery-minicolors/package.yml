@@ -1,4 +1,4 @@
-package: be_utilities/jquery-minicolors
+package: ui_tools/jquery-minicolors
 version: '2.2.6'
 author: 'Friends Of REDAXO'
 supportpage: github.com/FriendsOfREDAXO

@@ -1,9 +1,9 @@
 <?php
 
-$file = rex_file::get(rex_path::addon('be_utilities','CHANGELOG.md'));
+$file = rex_file::get(rex_path::addon('ui_tools','CHANGELOG.md'));
 $Parsedown = new Parsedown();
 
-$content =  '<div id="be_utilities">'.$Parsedown->text($file).'</div>';
+$content =  '<div id="ui_tools">'.$Parsedown->text($file).'</div>';
 
 $fragment = new rex_fragment();
 $fragment->setVar('title', 'Changelog');

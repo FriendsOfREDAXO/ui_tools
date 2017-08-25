@@ -2,10 +2,10 @@
 
 //echo rex_view::title(rex_i18n::msg('selectize_menu_entry'));
 
-$file = rex_file::get(rex_path::addon('be_utilities/plugins/selectize/assets/selectize','LICENSE'));
+$file = rex_file::get(rex_path::addon('ui_tools/plugins/selectize/assets/selectize','LICENSE'));
 $Parsedown = new Parsedown();
 
-$content =  '<div id="be_utilities">'.$Parsedown->text($file).'</div>';
+$content =  '<div id="ui_tools">'.$Parsedown->text($file).'</div>';
 
 $fragment = new rex_fragment();
 $fragment->setVar('title', rex_i18n::msg('selectize_license'));

@@ -1,4 +1,4 @@
-## be_utilites für REDAXO 5
+## UI Tools für REDAXO 5
 
 Ziel diese Addons ist es einfach einige Vendoren für REDAXO 5.x installieren zu können. Damit ist es sehr einfach möglich ein benötigtes Werkzeug (z.B. iconpicker, colorpicker) für das Backend (und Frontend) zur Verfügung zu stellen.
 
