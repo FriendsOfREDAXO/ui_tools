@@ -1,3 +1,16 @@
 ### UI Tools
 
+#### 26.08.2017 - v0.2.1 Make Plugin bootstrap-datetimepicker functional
+ 
+- added classes .datetimepicker, .datepicker, .timepicker for direct usage in modules
+
+#### 25.08.2017 - v0.2.0 Plugin bootstrap-datetimepicker added
+
+- added vendor plugin bootstrap-datetimepicker
+
+#### 25.08.2017 - v0.1.5 Refactoring
+
+- refactored repository from be_utilities to ui_tools
+
 #### 22.08.2017 - v0.1.0 Initial commit
+
