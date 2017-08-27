@@ -1,5 +1,9 @@
 ### UI Tools
 
+#### 27.08.2017 - v0.2.3 Make Plugin jquery-minicolors functional
+ 
+- added classes .minicolors for direct usage in modules
+
 #### 27.08.2017 - v0.2.2 Make Plugin selectize functional
  
 - added classes .selectize for direct usage in modules

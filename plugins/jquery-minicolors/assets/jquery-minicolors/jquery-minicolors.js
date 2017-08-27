@@ -20,6 +20,5 @@ $(document).on('ready pjax:success',function() {
         swatches: []
     };
 
-    $('input.textColor').minicolors(settings);
-    $('input.bgColor').minicolors(settings);
+    $('input.minicolors').minicolors(settings);
 });
