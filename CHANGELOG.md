@@ -1,5 +1,9 @@
 ### UI Tools
 
+#### 27.08.2017 - v0.2.2 Make Plugin selectize functional
+ 
+- added classes .selectize for direct usage in modules
+
 #### 26.08.2017 - v0.2.1 Make Plugin bootstrap-datetimepicker functional
  
 - added classes .datetimepicker, .datepicker, .timepicker for direct usage in modules
