@@ -2,7 +2,7 @@
 
 #### 28.09.2017 - v0.2.4 Add jquery-minicolors support for System Customizer Color Field
  
-- standard is on, set to color format `hex` for backwards compatibility
+- standard is on, set to color format `hex` for backwards compatibility - fixes #2
 
 #### 27.08.2017 - v0.2.3 Make Plugin jquery-minicolors functional
  
