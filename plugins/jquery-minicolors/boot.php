@@ -1,8 +1,13 @@
 <?php
 
-if(rex::isBackend()) {
+if (rex::isBackend() && rex::getUser()) {
+    $config = $this->getConfig();
+
     rex_view::addCssFile($this->getAssetsUrl('jquery-minicolors/jquery.minicolors.css'));
     rex_view::addJsFile($this->getAssetsUrl('jquery-minicolors/jquery.minicolors.min.js'));
     rex_view::addJsFile($this->getAssetsUrl('jquery-minicolors/jquery-minicolors.js'));
-    rex_view::addJsFile($this->getAssetsUrl('jquery-minicolors/jquery-minicolors-for-customizer.js'));
+
+    if ($config['for-customizer']) {
+        rex_view::addJsFile($this->getAssetsUrl('jquery-minicolors/jquery-minicolors-for-customizer.js'));
+    }
 }
