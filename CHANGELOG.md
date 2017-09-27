@@ -1,5 +1,9 @@
 ### UI Tools
 
+#### 28.09.2017 - v0.2.4 Add jquery-minicolors support for System Customizer Color Field
+ 
+- standard is on, set to color format `hex` for backwards compatibility
+
 #### 27.08.2017 - v0.2.3 Make Plugin jquery-minicolors functional
  
 - added classes .minicolors for direct usage in modules
