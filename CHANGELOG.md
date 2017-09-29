@@ -1,5 +1,9 @@
 ### UI Tools
 
+#### 29.09.2017 - v0.2.5 Add help files
+ 
+- add general, datetimepicker, minicolors, selectize help files
+
 #### 28.09.2017 - v0.2.4 Add jquery-minicolors support for System Customizer Color Field
  
 - standard is on, set to color format `hex` for backwards compatibility - fixes #2
