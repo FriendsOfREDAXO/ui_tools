@@ -11,7 +11,7 @@
 ?>
 <h3>UI Tools AddOn <small>v0.2.4</small></h3>
 
-<!-- <img src="src/addons/ui_tools/assets/img/friends-of-redaxo-addon.png" style="float:right;" width="305" height="206" /> -->
+<img src="https://github.com/FriendsOfREDAXO/ui_tools/blob/assets/assets/img/friends-of-redaxo-addon.png?raw=true" style="float:right;" width="305" height="206" />
 <p>
     Dieses AddOn bindet dient als Container zur Einbindung verschiedener Vendoren.<br>
     Momentan verfügbar:
