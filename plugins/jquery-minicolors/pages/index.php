@@ -109,7 +109,7 @@ echo '
 $body = '
 @ToDO<br><br>
 <p>
-    .minicolors auf einem Input fügt einen Color Picker hinzu.
+    .minicolors auf einem Input fügt einen Color Picker hinzu. In YForm ein Text-Eingabefeld wählen und über JSON-Attribute die Klassen <code>{"class":"minicolors form-control"}</code> mitgeben.
 </p>
 ';
 
