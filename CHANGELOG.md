@@ -1,8 +1,9 @@
 ### UI Tools
 
-#### 25.10.2018 - v0.3.0 SCSS compiling deleted
+#### 25.10.2018 - v0.3.0 
  
-scss compiling caused performance problems @skerbis
+- scss compiling caused performance problems, so deleted @skerbis
+- includeCurrentPageSubPath @christophboecker 
 
 #### 29.09.2017 - v0.2.5 Add help files
  
