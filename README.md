@@ -4,6 +4,10 @@ Ziel diese Addons ist es einfach einige Vendoren für REDAXO 5.x installieren zu
 
 Weitere Informationen finden sich in der Dokumentation des jeweiligen Plugin.
 
+In yForm lassen sich die Controls als Parameter via **individuelle Attribute** aktivieren, z.B. Minicolors:
+
+    {"class":"minicolors"}
+
 ___
 * Changelog -> [CHANGELOG.md](CHANGELOG.md)
 * Lizenz ->  [LICENSE.md](LICENSE.md)
