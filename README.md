@@ -1,12 +1,13 @@
 ## UI Tools für REDAXO 5
 
-Ziel diese Addons ist es einfach einige Vendoren für REDAXO 5.x installieren zu können. Damit ist es sehr einfach möglich ein benötigtes Werkzeug (z.B. iconpicker, colorpicker) für das Backend (und Frontend) zur Verfügung zu stellen.
+Ziel des Addons ist es, einige Vendoren für REDAXO 5.x installieren zu können. Damit ist es sehr einfach möglich ein benötigtes Werkzeug (z.B. iconpicker, colorpicker) für das Backend (und Frontend) zur Verfügung zu stellen.
 
 Weitere Informationen finden sich in der Dokumentation des jeweiligen Plugin.
 
-In yForm lassen sich die Controls als Parameter via **individuelle Attribute** aktivieren, z.B. Minicolors:
+Die Verwendung in yForm ist über die **individuellen Attribute** möglich.  
 
-    {"class":"minicolors"}
+z.B. Minicolors: `{"class":"minicolors"}`
+
 
 ___
 * Changelog -> [CHANGELOG.md](CHANGELOG.md)
@@ -29,4 +30,5 @@ ___
 ___
 ### Credits
 
-[jQuery-minicolors](https://github.com/claviska/jquery-minicolors), [selectize](https://github.com/selectize/selectize.js/)
+- [jQuery-minicolors](https://github.com/claviska/jquery-minicolors)
+- [selectize](https://github.com/selectize/selectize.js/)
