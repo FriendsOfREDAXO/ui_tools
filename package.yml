@@ -19,3 +19,6 @@ page:
                 info: { title: 'Info'}
                 changelog: { title: 'translate:changelog'}
                 lizenz: { title: 'translate:license'}
+
+requires:
+    redaxo: '>=5.1.0'
