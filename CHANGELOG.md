@@ -1,5 +1,9 @@
 ### UI Tools
 
+#### 17.12.2018 - v0.4.0
+
+- add img list widget
+
 #### 25.10.2018 - v0.3.0 
  
 - scss compiling caused performance problems, so deleted @skerbis
