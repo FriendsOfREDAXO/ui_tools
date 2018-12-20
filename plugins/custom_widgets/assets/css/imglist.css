@@ -56,3 +56,7 @@
 .rex-js-widget-imglist ul { /* for IE6,7 */
     zoom: 1;
 }
+
+.tooltip-inner.rex-img-list-tooltip {
+    word-break: break-all;
+}

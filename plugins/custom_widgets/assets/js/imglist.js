@@ -18,6 +18,11 @@ function imglist_init_widget(element) {
         opacity: 0.6,
         cursor: 'move',
         placeholder: "li-placeholder",
+        start: function(event, ui) {
+            if (ui.item.find('img').length) {
+                imglist_hide_tooltip(element, ui.item.find('img'));
+            }
+        },
         stop: function () {
             // refresh input
             imglist_write_input(widget_id, 'REX_MEDIALIST_', 'REX_IMGLIST_');
@@ -108,8 +113,13 @@ function imglist_add_img_by_last_list_item(element) {
     // set key for mapping between option and li element
     last_option.attr('data-key', last_key);
 
+    // create image element
+    let new_li = $('<li data-key="' + last_key + '" value="' + last_img + '" data-value="' + last_img + '"><img class="thumbnail" src="index.php?rex_media_type=rex_medialistbutton_preview&rex_media_file=' + last_img + '" title="' + last_img + '" /></li>');
+
+    imglist_add_tooltip(element, new_li.find('img'));
+
     // add li img element
-    element.find('ul.thumbnail-list').append('<li data-key="' + last_key + '" value="' + last_img + '" data-value="' + last_img + '"><img class="thumbnail" src="index.php?rex_media_type=rex_medialistbutton_preview&rex_media_file=' + last_img + '" /></li>');
+    element.find('ul.thumbnail-list').append(new_li);
 
     // refresh input
     imglist_write_input(widget_id, 'REX_MEDIALIST_', 'REX_IMGLIST_');
@@ -127,7 +137,29 @@ function imglist_list_items_action(element) {
         if (!selected) {
             imglist_list_items_select(element, $(this));
         }
+        if ($(this).find('img').length) {
+            imglist_hide_tooltip(element, $(this).find('img'));
+        }
     });
+
+    if (element.find('ul.thumbnail-list li img').length) {
+        imglist_add_tooltip(element, element.find('ul.thumbnail-list li img'));
+    }
+}
+
+function imglist_add_tooltip(element, item) {
+    if (element.hasClass('rex-js-widget-tooltip')) {
+        item.tooltip({
+            container: 'body',
+            template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner rex-img-list-tooltip"></div></div>'
+        });
+    }
+}
+
+function imglist_hide_tooltip(element, item) {
+    if (element.hasClass('rex-js-widget-tooltip')) {
+        item.tooltip('hide');
+    }
 }
 
 function imglist_list_items_select(element, item) {
