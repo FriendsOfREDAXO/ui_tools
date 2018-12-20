@@ -86,7 +86,7 @@ class rex_var_imglist extends rex_var
                 <a href="#" class="btn btn-popup add" title="' . rex_i18n::msg('var_media_new') . '"' . $disabled . '><i class="rex-icon rex-icon-add-media"></i></a>
                 <a href="#" class="btn btn-popup delete" title="' . rex_i18n::msg('var_media_remove') . '"' . $disabled . '><i class="rex-icon rex-icon-delete-media"></i></a>
                 <a href="#" class="btn btn-popup view" title="' . rex_i18n::msg('var_media_view') . '"' . $disabled . '><i class="rex-icon rex-icon-view-media"></i></a>';
-        $e['after'] = '<div class="rex-js-media-preview"></div></div>';
+        $e['after'] = '</div>';
 
         $fragment = new rex_fragment();
         $fragment->setVar('elements', [$e], false);
