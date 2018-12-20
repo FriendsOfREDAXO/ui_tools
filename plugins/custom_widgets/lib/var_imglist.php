@@ -30,7 +30,7 @@ class rex_var_imglist extends rex_var
                 return false;
             }
             $args = [];
-            foreach (['category', 'preview', 'types'] as $key) {
+            foreach (['category', 'tooltip', 'types'] as $key) {
                 if ($this->hasArg($key)) {
                     $args[$key] = $this->getArg($key);
                 }
@@ -53,11 +53,8 @@ class rex_var_imglist extends rex_var
         }
 
         $wdgtClass = ' rex-js-widget-imglist';
-        if (isset($args['preview']) && $args['preview']) {
-            $wdgtClass .= ' rex-js-widget-preview';
-            if (rex_addon::get('media_manager')->isAvailable()) {
-                $wdgtClass .= ' rex-js-widget-preview-media-manager';
-            }
+        if (isset($args['tooltip']) && $args['tooltip']) {
+            $wdgtClass .= ' rex-js-widget-tooltip';
         }
 
         $thumbnails = '';
@@ -66,7 +63,7 @@ class rex_var_imglist extends rex_var
         if (is_array($medialistarray)) {
             foreach ($medialistarray as $key => $file) {
                 if ($file != '') {
-                    $thumbnails .= '<li data-key="' . $key . '" value="' . $file . '" data-value="' . $file . '"><img class="thumbnail" src="' . rex_url::backendController(['rex_media_type' => 'rex_medialistbutton_preview', 'rex_media_file' => $file]) . '" /></li>';
+                    $thumbnails .= '<li data-key="' . $key . '" value="' . $file . '" data-value="' . $file . '"><img class="thumbnail" src="' . rex_url::backendController(['rex_media_type' => 'rex_medialistbutton_preview', 'rex_media_file' => $file]) . '" title="' . $file . '" /></li>';
 
                     $options .= '<option data-key="' . $key . '" value="' . $file . '">' . $file . '</option>';
                 }
