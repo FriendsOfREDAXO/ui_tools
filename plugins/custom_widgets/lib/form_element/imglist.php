@@ -24,9 +24,9 @@ class rex_form_widget_imglist_element extends rex_form_element
         $this->args['types'] = $types;
     }
 
-    public function setPreview($preview = true)
+    public function setTooltip($tooltip = true)
     {
-        $this->args['preview'] = $preview;
+        $this->args['tooltip'] = $tooltip;
     }
 
     public function formatElement()
@@ -37,5 +37,32 @@ class rex_form_widget_imglist_element extends rex_form_element
 
         ++$widget_counter;
         return $html;
+    }
+}
+
+/**
+ * $field = imglist::addImglistField($rex_form, 'media');
+ * $field->setLabel('Image');
+ * $field->setTooltip(true);
+ */
+class imglist
+{
+    /**
+     * @param rex_form $form
+     * @param $name
+     * @param null $value
+     * @param array $attributes
+     * @return rex_form_element
+     * @throws rex_exception
+     * @author Joachim Doerr
+     */
+    public static function addImglistField(rex_form $form, $name, $value = null, array $attributes = [])
+    {
+        if (!rex_addon::get('mediapool')->isAvailable()) {
+            throw new rex_exception(__METHOD__ . '() needs "mediapool" addon!');
+        }
+        $attributes['internal::fieldClass'] = 'rex_form_widget_imglist_element';
+        $field = $form->addField('', $name, $value, $attributes, true);
+        return $field;
     }
 }
