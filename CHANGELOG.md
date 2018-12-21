@@ -1,8 +1,18 @@
 ### UI Tools
 
+#### 17.12.2018 - v0.4.1
+
+- img imgListWidget support for selectMediaListArray('selectedmedia[]') added
+- added imgListWidget helper class for rex_form element
+    ```
+    $field = imglist::addImglistField($rex_form, 'media');
+    $field->setLabel('Image');
+    $field->setTooltip(true);
+    ```
+
 #### 17.12.2018 - v0.4.0
 
-- add img list widget
+- add imgListWidget
 
 #### 25.10.2018 - v0.3.0 
  
