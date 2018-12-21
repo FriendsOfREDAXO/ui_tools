@@ -106,26 +106,30 @@ function imglist_widget_actions(element) {
 
 function imglist_add_img_by_last_list_item(element) {
     let widget_id = element.attr('data-widget-id'),
-        last_option = element.find('select option:last'),
-        last_img = last_option.val(),
-        last_key = element.find('select option').length;
+        go_go_go = false;
 
-    // set key for mapping between option and li element
-    last_option.attr('data-key', last_key);
+    for (let i=0; i < element.find('select option').length; i++) {
+        if ((element.find('ul.thumbnail-list li').length - 1) < i) {
+            // add new element
+            let item = element.find('select option').eq(i);
+            item.attr('data-key', i);
 
-    // create image element
-    let new_li = $('<li data-key="' + last_key + '" value="' + last_img + '" data-value="' + last_img + '"><img class="thumbnail" src="index.php?rex_media_type=rex_medialistbutton_preview&rex_media_file=' + last_img + '" title="' + last_img + '" /></li>');
+            let new_li = $('<li data-key="' + i + '" value="' + item.val() + '" data-value="' + item.val() + '"><img class="thumbnail" src="index.php?rex_media_type=rex_medialistbutton_preview&rex_media_file=' + item.val() + '" title="' + item.val() + '" /></li>');
 
-    imglist_add_tooltip(element, new_li.find('img'));
+            imglist_add_tooltip(element, new_li.find('img'));
 
-    // add li img element
-    element.find('ul.thumbnail-list').append(new_li);
+            // add li img element
+            element.find('ul.thumbnail-list').append(new_li);
+            go_go_go = true; // go forward
+        }
+    }
+    if (go_go_go) {
+        // refresh input
+        imglist_write_input(widget_id, 'REX_MEDIALIST_', 'REX_IMGLIST_');
 
-    // refresh input
-    imglist_write_input(widget_id, 'REX_MEDIALIST_', 'REX_IMGLIST_');
-
-    // refresh sortable
-    element.find('ul.thumbnail-list').sortable('refresh');
+        // refresh sortable
+        element.find('ul.thumbnail-list').sortable('refresh');
+    }
 }
 
 function imglist_list_items_action(element) {
