@@ -34,7 +34,7 @@ REX_IMGLIST[1 widget=1]
 
 ***Anwendung in rex_form***
 
-``php
+```php
 $field = imglist::addImglistField($rex_form, 'media');
 $field->setLabel('Image');
 $field->setTooltip(true);
