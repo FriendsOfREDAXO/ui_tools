@@ -23,7 +23,7 @@ Aktuell:
 
 `REX_IMGLIST[1 widget=1]`
 Liefert eine auf Bilder spezialisierte Medialist mit Drag&Drop und Thumbnails. 
-![Screenshot]https://raw.githubusercontent.com/FriendsOfREDAXO/ui_tools/assets/imglist.png)
+![Screenshot](https://raw.githubusercontent.com/FriendsOfREDAXO/ui_tools/assets/imglist.png)
 Screenshot IMGLIST
 
 ___
