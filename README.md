@@ -5,9 +5,8 @@ Ziel des Addons ist es, einige Vendoren und nützliche Erweiterungen für REDAXO
 `REX_IMGLIST[1 widget=1]`
 Liefert eine auf Bilder spezialisierte Medialist mit Drag&Drop und Thumbnails. 
 
+Die Verwendung von iconpicker, cloropicker in yForm ist über die **individuellen Attribute** möglich.  
 Weitere Informationen finden sich in der Dokumentation des jeweiligen Plugin.
-
-Die Verwendung in yForm ist über die **individuellen Attribute** möglich.  
 
 z.B. Minicolors: `{"class":"minicolors"}`
 
