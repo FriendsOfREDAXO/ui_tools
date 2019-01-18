@@ -8,6 +8,6 @@ if (rex::isBackend() && rex::getUser()) {
     rex_view::addJsFile($this->getAssetsUrl('jquery-minicolors/jquery-minicolors.js'));
 
     if ($config['for-customizer']) {
-        rex_view::addJsFile($this->getAssetsUrl('jquery-minicolors/jquery-minicolors-for-customizer.js'));
+        rex_view::addJsFile($this->getAssetsUrl('jquery-minicolors/jQuery-minicolors-for-customizer.js'));
     }
 }
