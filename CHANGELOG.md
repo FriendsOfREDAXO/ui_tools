@@ -2,6 +2,7 @@
 
 #### 17.12.2018 - v0.4.1
 
+- minicolors for customizer fixed
 - img imgListWidget support for selectMediaListArray('selectedmedia[]') added
 - added imgListWidget helper class for rex_form element
     ```
