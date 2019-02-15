@@ -1,4 +1,4 @@
-$(document).on('ready pjax:success',function() {
+$(document).on('rex:ready', function() {
     settings = {
         animationSpeed: 50,
         animationEasing: 'swing',
