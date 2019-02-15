@@ -4,7 +4,8 @@ $(document).on('ready pjax:success',function() {
     });
     $('.datepicker').datetimepicker({
         locale: 'de',
-        format: 'DD.MM.YYYY'
+        format: 'DD.MM.YYYY',
+        extraFormats: ['YYYY-MM-DD']
     });
     $('.timepicker').datetimepicker({
         locale: 'de',
