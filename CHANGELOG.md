@@ -1,5 +1,8 @@
 ### UI Tools
 
+#### 14.03.2019 - v1.0.0
+imglist entfernt, wird in mform fortgeführt
+
 #### 17.12.2018 - v0.4.1
 
 - minicolors for customizer fixed
