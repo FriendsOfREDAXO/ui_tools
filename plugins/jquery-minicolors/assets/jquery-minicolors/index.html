@@ -5,11 +5,11 @@
   <meta charset="utf-8">
 
   <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <!-- Bootstrap 3 -->
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   <!-- MiniColors -->
   <script src="jquery.minicolors.js"></script>
@@ -33,11 +33,17 @@
       border: none;
       background: rgba(128, 128, 128, .1);
     }
+    [dir=rtl] code {
+      direction: ltr;
+    }
     pre {
       background: #f8f8f8;
       border: none;
       color: #333;
       padding: 20px;
+    }
+    [dir=rtl] pre {
+      direction: ltr;
     }
     h2 {
       margin-top: 50px;
@@ -77,7 +83,7 @@
           inline: $(this).attr('data-inline') === 'true',
           letterCase: $(this).attr('data-letterCase') || 'lowercase',
           opacity: $(this).attr('data-opacity'),
-          position: $(this).attr('data-position') || 'bottom left',
+          position: $(this).attr('data-position') || 'bottom',
           swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
           change: function(value, opacity) {
             if( !value ) return;
@@ -105,8 +111,8 @@
           Now with Bootstrap 3 support!
         </p>
         <p>
-          A project by <a href="http://www.abeautifulsite.net/">A Beautiful Site</a>,
-          originally developed for <a href="http://www.surrealcms.com/">Surreal CMS</a>.
+          A project by <a href="https://www.abeautifulsite.net/">A Beautiful Site</a>,
+          originally developed for <a href="https://www.surrealcms.com/">Surreal CMS</a>.
         </p>
       </div>
 
@@ -139,11 +145,14 @@
       <!-- Demos -->
       <h2 id="demos">Demos</h2>
       <p>
-        This is the main demo page, which uses <a href="http://getbootstrap.com/">Bootstrap 3</a>,
+        This is the main demo page, which uses <a href="https://getbootstrap.com/">Bootstrap 3</a>,
         but this plugin works without Bootstrap as well.
       </p>
       <p>
         <a href="without-bootstrap.html" class="btn btn-primary">View Demo Without Bootstrap</a>
+      </p>
+      <p>
+        <a class="btn btn-primary" onclick="$(body).attr('dir')=='rtl'?$(body).removeAttr('dir'):$(body).attr('dir', 'rtl')">Toggle LTR/RTL</a>
       </p>
 
       <!-- Control types -->
@@ -571,8 +580,13 @@ $.minicolors.defaults = $.extend($.minicolors.defaults, {
         <dt>swatches</dt>
         <dd>
           <p>
-            An array containing some colors, in either rgb(a) or hex format, that will
-            show up under the main color grid.
+            An array containing one or more strings of hex colors that will show up under the main
+            color grid.
+          </p>
+          <p>
+            Alternatively, this can be an array of <code>{ name, color }</code> objects where
+            <code>name</code> is a human-readable color name and <code>color</code> is a hex code.
+            In this case, the name will be used to set the swatch's <code>title</code> attribute.
           </p>
         </dd>
       </dl>
@@ -598,6 +612,20 @@ $.minicolors.defaults = $.extend($.minicolors.defaults, {
         <dd>
           <p>
             Returns the <em>input</em> element to its original, uninitialized state.
+          </p>
+        </dd>
+
+        <dt>hide</dt>
+        <dd>
+          <p>
+            Hides the color picker.
+          </p>
+        </dd>
+
+        <dt>show</dt>
+        <dd>
+          <p>
+            Shows the color picker.
           </p>
         </dd>
 
@@ -704,11 +732,11 @@ $(<em>selector</em>).minicolors({
 
       <h2 id="license">License</h2>
       <p>
-        Licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>,
+        Licensed under the <a href="https://opensource.org/licenses/MIT">MIT license</a>,
         same as <a href="https://jquery.org/license/">jQuery</a>.
       </p>
       <p>
-        &copy;2013 <a href="http://www.abeautifulsite.net/">A Beautiful Site, LLC.</a>
+        &copy;2013 <a href="https://www.abeautifulsite.net/">A Beautiful Site, LLC.</a>
       </p>
     </div>
   </div>
