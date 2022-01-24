@@ -29,7 +29,7 @@ var highlight = function($element, pattern) {
 			}
 		} 
 		// Recurse element node, looking for child text nodes to highlight, unless element 
-		// is childless, <script>, <style>, or already highlighted: <span class="highlight">
+		// is childless, <script>, <style>, or already highlighted: <span class="hightlight">
 		else if (node.nodeType === 1 && node.childNodes && !/(script|style)/i.test(node.tagName) && ( node.className !== 'highlight' || node.tagName !== 'SPAN' )) {
 			for (var i = 0; i < node.childNodes.length; ++i) {
 				i += highlight(node.childNodes[i]);
