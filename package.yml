@@ -21,4 +21,4 @@ page:
                 lizenz: { title: 'translate:license'}
 
 requires:
-    redaxo: '>=5.1.0'
+    redaxo: '>=5.12.0'
